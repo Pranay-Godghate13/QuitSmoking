@@ -1,5 +1,7 @@
 package com.quitsmoking.quitsmoking;
 
+import java.util.List;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -24,7 +26,11 @@ public class QuitsmokingApplication {
 
 		PersonRepo pr=context.getBean(PersonRepo.class);
 		pr.save(Satish);
-		pr.findAll();
+		List<Person> o=pr.findAll();
+		for(int i=0;i<o.size();i++)
+		{
+			System.out.println(o.get(i).getNam()+" "+o.get(i).getAge());
+		}
 	}
 
 }
