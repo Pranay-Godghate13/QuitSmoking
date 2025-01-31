@@ -1,17 +1,30 @@
 package com.quitsmoking.quitsmoking.model;
 
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+
+@Component
+@Scope("prototype")
 public class Person {
-    private String name;
+    private int id;
+    private String nam;
     private int age;
     private String gender;
     private int years;
     private int months;
-    private int number;
-    public String getName() {
-        return name;
+    private int n;
+    
+    public int getId() {
+        return id;
     }
-    public void setName(String name) {
-        this.name = name;
+    public void setId(int id) {
+        this.id = id;
+    }
+    public String getNam() {
+        return nam;
+    }
+    public void setNam(String name) {
+        this.nam = name;
     }
     public int getAge() {
         return age;
@@ -37,11 +50,11 @@ public class Person {
     public void setMonths(int months) {
         this.months = months;
     }
-    public int getNumber() {
-        return number;
+    public int getN() {
+        return n;
     }
-    public void setNumber(int number) {
-        this.number = number;
+    public void setN(int number) {
+        this.n = number;
     }
     
 

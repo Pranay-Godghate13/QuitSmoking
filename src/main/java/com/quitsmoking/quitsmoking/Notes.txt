@@ -1,0 +1,8 @@
+-----------------------------------NOTES-------------------------------------------
+
+QUIT-SMOKING APPLICATION
+------------------------
+
+1. Download dependency JDBC API and in memory database H2.
+2. Application context- Container which stores all the beans
+   @Scope('prototype')- Allows making new object of bean everytime it get called upon.
